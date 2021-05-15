@@ -25,6 +25,11 @@ public class ArticleController {
         return repo.findAll();
     }
 
+    @GetMapping("/{id}")
+    public Article findArticleById(@PathVariable("id") String articleId ){
+        return repo.findById(articleId).orElse(null);
+    }
+
     @PostMapping("/addAll")
     public Collection<Article> addAll(@RequestBody List<Article> articles){
         return repo.saveAll(articles);

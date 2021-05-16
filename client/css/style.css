@@ -215,7 +215,7 @@ header{
 	background: url('../images/bgdline.png') repeat-x ;
 	margin-bottom: 10px;
 }
-#ourserv article{
+.ourserv article{
 	width: 275px;
 	display: inline-block;
 	*display: inline;
@@ -223,7 +223,7 @@ header{
 	vertical-align: top;
 	margin: 0 38px 0 0;
 }
-#ourserv article h1, .latestp article h1{
+.ourserv article h1, .latestp article h1{
 	font-family: LeagueGothic, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -233,11 +233,11 @@ header{
 .lastarticle{
 	margin:0;
 }
-#ourserv{
+.ourserv{
 	margin: 8px 0 15px 20px;
 	width: 100%;
 }
-#ourserv img, .latestp img{
+.ourserv img, .latestp img{
 	margin-bottom: 5px;
     box-shadow: 0 4px 6px #000;
 }

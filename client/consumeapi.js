@@ -1,4 +1,4 @@
-
+var articles;
 
 async function getNews(category) {
     // console.log(category)
@@ -16,8 +16,12 @@ async function getNews(category) {
 async function po() {
     const politic = document.querySelector(".ourserv");
     await getNews('Politic');//dược r
-    console.log(articles);
+    // console.log(articles);
+    var articleId;
+
     for (let i = 0; i < articles.length; i++) {
+        articleId = articles[i].id;
+        console.log(articleId);
         let article = document.createElement('article');
         article.class = 'politic';
 
@@ -29,7 +33,7 @@ async function po() {
         let h1 = document.createElement('h1');
         h1.textContent = articles[i].title;
         let img = document.createElement('img');
-        img.src = 'images/1.jpg';
+        img.src = 'images/po'+ i + '.jpg';
         let p = document.createElement('p');
         p.textContent = articles[i].shortIntro;
 
@@ -38,7 +42,8 @@ async function po() {
         let a = document.createElement('a');
         img_div.class = 'rm';
         a.textContent = 'Read More';
-        a.href = 'fullwidth.html';
+        // a.href = 'singlepost.html';
+        a.href = `/singlepost.html?id=${articleId}`;
 
 
         img_div.appendChild(a);
@@ -56,6 +61,7 @@ async function po() {
 
 // Covid-19
 async function co() {
+    var articleId;
     const covid = document.querySelector("#covid");
     // console.log(politic);
     // article_array = await getNews("Politic");
@@ -63,6 +69,7 @@ async function co() {
     await getNews('Covid-19');//dược r
     console.log(articles);
     for (let i = 0; i < articles.length; i++) {
+        articleId = articles[i].id;
         let article = document.createElement('article');
         article.class = 'covid';
 
@@ -74,7 +81,7 @@ async function co() {
         let h1 = document.createElement('h1');
         h1.textContent = articles[i].title;
         let img = document.createElement('img');
-        img.src = 'images/2s.jpg';
+        img.src = 'images/covid'+i+'.jpg';
         let p = document.createElement('p');
         p.textContent = articles[i].shortIntro;
 
@@ -83,7 +90,7 @@ async function co() {
         let a = document.createElement('a');
         img_div.class = 'rm';
         a.textContent = 'Read More';
-        a.href = 'fullwidth.html';
+        a.href = `singlepost.html?id=${articleId}`;
 
         
         img_div.appendChild(a);
@@ -101,12 +108,11 @@ async function co() {
 // Business
 async function bu() {
     const business = document.querySelector("#business");
-    // console.log(politic);
-    // article_array = await getNews("Politic");
-    // console.log(article_array);
+    var articleId;
     await getNews('Business');//dược r
-    console.log(articles);
+    // console.log(articles);
     for (let i = 0; i < articles.length; i++) {
+        articleId = articles[i].id;
         let article = document.createElement('article');
         article.class = 'covid';
 
@@ -118,7 +124,7 @@ async function bu() {
         let h1 = document.createElement('h1');
         h1.textContent = articles[i].title;
         let img = document.createElement('img');
-        img.src = 'images/2s.jpg';
+        img.src = 'images/business'+i+'.jpg';
         let p = document.createElement('p');
         p.textContent = articles[i].shortIntro;
 
@@ -127,7 +133,7 @@ async function bu() {
         let a = document.createElement('a');
         img_div.class = 'rm';
         a.textContent = 'Read More';
-        a.href = 'fullwidth.html';
+        a.href = `singlepost.html?id=${articleId}`;
 
         
         img_div.appendChild(a);
@@ -144,10 +150,12 @@ async function bu() {
 
 // Technology
 async function tech() {
+    var articleId;
     const tech = document.querySelector("#technology");
     await getNews('Technology');
-    console.log(articles);
+    // console.log(articles);
     for (let i = 0; i < articles.length; i++) {
+        articleId = articles[i].id;
         let article = document.createElement('article');
         article.class = 'covid';
 
@@ -159,7 +167,7 @@ async function tech() {
         let h1 = document.createElement('h1');
         h1.textContent = articles[i].title;
         let img = document.createElement('img');
-        img.src = 'images/3s.jpg';
+        img.src = 'images/tech'+i+'.jpg';
         let p = document.createElement('p');
         p.textContent = articles[i].shortIntro;
 
@@ -168,7 +176,7 @@ async function tech() {
         let a = document.createElement('a');
         img_div.class = 'rm';
         a.textContent = 'Read More';
-        a.href = 'fullwidth.html';
+        a.href = `singlepost.html?id=${articleId}`;
 
         
         img_div.appendChild(a);
@@ -185,12 +193,11 @@ async function tech() {
 //Science
 async function sci() {
     const science = document.querySelector("#science");
-    // console.log(politic);
-    // article_array = await getNews("Politic");
-    // console.log(article_array);
+    var articleId;
     await getNews('Science');//dược r
-    console.log(articles);
+    // console.log(articles);
     for (let i = 0; i < articles.length; i++) {
+        articleId = articles[i].id;
         let article = document.createElement('article');
         article.class = 'covid';
 
@@ -202,7 +209,7 @@ async function sci() {
         let h1 = document.createElement('h1');
         h1.textContent = articles[i].title;
         let img = document.createElement('img');
-        img.src = 'images/pbs2.jpg';
+        img.src = 'images/sci'+i+'.jpg';
         let p = document.createElement('p');
         p.textContent = articles[i].shortIntro;
 
@@ -211,7 +218,7 @@ async function sci() {
         let a = document.createElement('a');
         img_div.class = 'rm';
         a.textContent = 'Read More';
-        a.href = 'fullwidth.html';
+        a.href = `singlepost.html?id=${articleId}`;
 
         
         img_div.appendChild(a);
@@ -231,11 +238,3 @@ bu();
 tech();
 sci();
 
-// renderNews("Politic");
-
-
-
-
-
-//t đang gọi c đáy
-//chỗ t đang ồn k nghe được

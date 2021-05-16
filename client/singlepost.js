@@ -13,6 +13,10 @@ async function getNews(articleId) {
 
 
 async function renderData() {
+    
+
+    // img.getAttribute(`${articleId}`+`.jpg`);
+
     await getNews(articleId);
     var author = document.querySelector('#author');
     var z = document.createTextNode(article.author); // is a node
@@ -30,6 +34,11 @@ async function renderData() {
 
     var content = document.querySelector('#content');
     content.appendChild(document.createTextNode(article.content));
+
+    let anh = document.querySelector('.image');
+    let img = document.createElement('img');
+    img.src = 'images/'+ articleId + '.jpg';
+    anh.appendChild(img);
 
 
     // related posts

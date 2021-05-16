@@ -475,6 +475,10 @@ input[type="submit"]:active{
 	margin: 20px auto;
 }
 
+.image img{
+	width: 577px;
+}
+
 
 /*********************    COMMENT STYLE   ************************/
 .tip {

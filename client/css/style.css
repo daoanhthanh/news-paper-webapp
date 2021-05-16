@@ -223,7 +223,7 @@ header{
 	vertical-align: top;
 	margin: 0 38px 0 0;
 }
-#ourserv article h1, #latestp article h1{
+#ourserv article h1, .latestp article h1{
 	font-family: LeagueGothic, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -237,7 +237,7 @@ header{
 	margin: 8px 0 15px 20px;
 	width: 100%;
 }
-#ourserv img, #latestp img{
+#ourserv img, .latestp img{
 	margin-bottom: 5px;
     box-shadow: 0 4px 6px #000;
 }
@@ -283,14 +283,14 @@ header{
 	background: url('../images/bgdline.png') repeat-x ;
 	margin-bottom: 10px;
 }
-#latestp article{
+.latestp article{
 	width: 210px;
 	display: inline-block;
 	*display: inline;
 	zoom:1;
 	margin-right: 20px;
 }
-#latestp{
+.latestp{
 	margin-left: 20px;
 }
 

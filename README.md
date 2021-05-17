@@ -15,6 +15,9 @@ Home page
 A single article
 ![](./demo/singlepost.jpg)
 
+**How it works**
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.partech.nl%2Fnl%2Fpublicaties%2F2020%2F07%2F9-trending-best-practices-for-rest-api-development&psig=AOvVaw21Fli4-i7ZS6kOVfh-yRyo&ust=1621306173174000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKD9u6faz_ACFQAAAAAdAAAAABAI)
+
 ---
 ## Installation
 ### Prequisite (or can use other similar environments)

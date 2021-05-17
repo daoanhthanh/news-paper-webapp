@@ -155,7 +155,7 @@ nav{
 header{
 	margin-bottom: 25px;
 }
-#home a#homenav, #blog a#blognav, #fullwidth a#fullwidthnav, #contact a#contactnav{
+#home a#homenav, #blog a#blognav, #fullwidth a#fullwidthnav, #contact a#contactnav, #about a#aboutnav{
 	color: #b82924;
 }
 /*************** B A N N E R    S T Y L E ******************/
@@ -538,6 +538,46 @@ input[type="submit"]:active{
 	margin-bottom: 10px;
 
   }
+
+/************** ABOUT STYLE ****************/
+.about_wrapper{
+	height: 200px;
+	position: relative;
+	margin: 50px;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+#avatar {
+	margin-left: 100px;
+	float:left; 
+	/* background: #34cba2; */
+	width:25%;
+	height: 200px;
+}
+
+#avatar img{
+	margin-left: 20px;
+	margin-top: 1px;
+	height: 198px;
+	width: 190px;
+}
+#introduce{
+	padding: 30px 0px 0px 20px; 
+	float:left; 
+	/* background:#CB345D; */
+	width:50%;
+	height: 200px;
+}
+#introduce h1{
+	color: #B82924;
+}
+ul.a{
+	padding-left: 20px;
+	list-style: circle;
+}
+
+
+
 
 /************* F O O T E R     S T Y L E *************************/
 

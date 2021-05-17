@@ -25,7 +25,7 @@ A single article
 - [Docker](https://www.docker.com/products/docker-desktop) (or [MongoDB](https://www.mongodb.com/)) installed (username=```root``` && password=```example```)
 - Java 11.0.11 2021-04-20 LTS
 - Apache Maven 3.8.1
-- Httpie (to inport data). Installation link [here](https://httpie.io/)
+- [Httpie](https://httpie.io/) (to inport data). 
 
 ### How to run
 ```Server```

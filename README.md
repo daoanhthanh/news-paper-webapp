@@ -7,7 +7,7 @@ This assignment demo how a simply web app works. The site alow user to view and 
 Other questions or requirement please contact me via ![Twitter](https://twitter.com/sirEddieDao) or ![LinkedIn](https://www.linkedin.com/in/daoanhthanh/).
 ---
 Demo:
-![Homepage](./demo/homepage.jpg)
+![Homepage](./demo/home.jpg)
 
-![A single Article](./demo/singlearticle.jpg)
+![A single Article](./demo/article.jpg)
 ---

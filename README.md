@@ -1,10 +1,10 @@
 # News Application
 Basic newspaper site written in Java, HTML, CSS, JavaScript (developed based on Hanoi University's requirement)
 ---
-This assignment demo how a simply web app works. The site alow user to view and put a comment below each article. There are several articles added as an example for demo purposes, however it may not work perfectly in other machine.
+This assignment demo how a simply web app works. The site alow user to view and put a comment below each article. There are several articles added as an example for demo purposes, however it may not work perfectly on other machine.
 [Link youtube for reference](https://www.youtube.com/watch?v=BqR3t9_RYTQ).
 
-Other questions or requirement please contact me via [Twitter](https://twitter.com/sirEddieDao) or [LinkedIn](https://www.linkedin.com/in/daoanhthanh/) (Đào Anh Thành).
+Other questions or requirements please contact me via [Twitter](https://twitter.com/sirEddieDao) or [LinkedIn](https://www.linkedin.com/in/daoanhthanh/) (Đào Anh Thành).
 
 ---
 **Demo:**
@@ -15,21 +15,25 @@ Home page
 A single article
 ![](./demo/singlepost.jpg)
 
+**How it works**
+
+![](https://www.partech.nl/publication-image/%7B46D64AEE-5C24-439A-8659-3E6E17F3ED9A%7D)
+
 ---
 ## Installation
 ### Prequisite (or can use other similar environments)
-- Docker (or MongoDB) installed (username=```root``` && password=```example```)
+- [Docker](https://www.docker.com/products/docker-desktop) (or [MongoDB](https://www.mongodb.com/)) installed (username=```root``` && password=```example```)
 - Java 11.0.11 2021-04-20 LTS
 - Apache Maven 3.8.1
-- Httpie (to inport data). Installation link [here](https://httpie.io/)
+- [Httpie](https://httpie.io/) (to inport data). 
 
 ### How to run
 ```Server```
-1. Navigate to ./server
-2. Open terminal and run ```docker-compose up```
-3. Run ```mvn install```
+1. Open terminal and navigate to ./server and run below commands:
+2. ```docker-compose up```
+3. ```mvn install```
 4. ```java -jar target/iwsA3_server.jar```
-5. Run ```http POST :1900/article/addAll > data.json``` to import data to db
+5. ```http POST :1900/article/addAll > data.json``` to import data to db
 
 ```Client```
 1. Navigate to ./client

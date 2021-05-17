@@ -22,7 +22,7 @@ A single article
 ---
 ## Installation
 ### Prequisite (or can use other similar environments)
-- Docker (or MongoDB) installed (username=```root``` && password=```example```)
+- [Docker](https://www.docker.com/products/docker-desktop) (or [MongoDB](https://www.mongodb.com/)) installed (username=```root``` && password=```example```)
 - Java 11.0.11 2021-04-20 LTS
 - Apache Maven 3.8.1
 - Httpie (to inport data). Installation link [here](https://httpie.io/)

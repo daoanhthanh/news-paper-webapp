@@ -516,12 +516,16 @@ input[type="submit"]:active{
 	line-height: 1.5;
 	color: #9c9183;
   }
-
+  
   .tags{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+  }
+  .tags a{
 	font-style: italic;
 	color: aqua;
-	margin-bottom: 20px;
   }
+
 
   .comm{
 	padding-top: 100px;
@@ -540,4 +544,5 @@ input[type="submit"]:active{
 footer{
 	margin-top: 30px;
 	text-align: right;
+	font-family: 'Courier New', Courier, monospace;
 }

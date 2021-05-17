@@ -22,8 +22,7 @@ async function renderData() {
     var z = document.createTextNode(article.author); // is a node
     author.appendChild(z);
 
-    var tags = document.querySelector('.tags');
-    tags.appendChild(document.createTextNode(article.tag));
+    
     
     var category = document.querySelector('#category');
     category.appendChild(document.createTextNode(article.category))
@@ -45,6 +44,7 @@ async function renderData() {
     img.src = 'images/'+ articleId + '.jpg';
     anh.appendChild(img);
 
+    
 
     // related posts
     var relatedArticle = document.querySelector('.related_posts');
@@ -89,6 +89,12 @@ async function renderData() {
 
 
     }
+
+    var tags = document.querySelector('.tags');
+    let b = document.createElement('a');
+    b.textContent = article.tag;
+    b.href = "#homenav";
+    tags.appendChild(b);
 }
 
 

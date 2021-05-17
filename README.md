@@ -29,11 +29,11 @@ A single article
 
 ### How to run
 ```Server```
-1. Navigate to ./server
-2. Open terminal and run ```docker-compose up```
-3. Run ```mvn install```
+1. Open terminal and navigate to ./server and run below commands:
+2. ```docker-compose up```
+3. ```mvn install```
 4. ```java -jar target/iwsA3_server.jar```
-5. Run ```http POST :1900/article/addAll > data.json``` to import data to db
+5. ```http POST :1900/article/addAll > data.json``` to import data to db
 
 ```Client```
 1. Navigate to ./client

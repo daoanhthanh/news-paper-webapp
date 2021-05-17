@@ -10,10 +10,10 @@ Other questions or requirement please contact me via [Twitter](https://twitter.c
 **Demo:**
 
 Home page
-[](./demo/homepage.jpg)
+![](./demo/homepage.jpg)
 
 A single article
-[](./demo/singlepost.jpg)
+![](./demo/singlepost.jpg)
 
 ---
 ## Installation
@@ -25,7 +25,7 @@ A single article
 
 ### How to run
 ```Server```
-1. Navigate to ./server 
+1. Navigate to ./server
 2. Open terminal and run ```docker-compose up```
 3. Run ```mvn install```
 4. ```java -jar target/iwsA3_server.jar```

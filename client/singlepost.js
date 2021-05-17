@@ -2,7 +2,9 @@
 // var article;
 const urlParams = new URLSearchParams(window.location.search);
 const articleId = urlParams.get('id');
+const articleTitle = urlParams.get('title');
 console.log(articleId);
+console.log(articleTitle);
 
 async function getNews(articleId) {
     const base = await `http://localhost:1900/article/${articleId}`;
@@ -14,13 +16,10 @@ async function getNews(articleId) {
 
 async function renderData() {
     
-
-    // img.getAttribute(`${articleId}`+`.jpg`);
-
     await getNews(articleId);
+
     var author = document.querySelector('#author');
     var z = document.createTextNode(article.author); // is a node
-    // z.textContent = article.author;
     author.appendChild(z);
     
     var category = document.querySelector('#category');
@@ -28,6 +27,9 @@ async function renderData() {
 
     var title = document.querySelector('#articleTitle');
     title.appendChild(document.createTextNode(article.title));
+
+    var title2 = document.querySelector('#articletitle');
+    title2.appendChild(document.createTextNode(article.title));
 
     var content1 = document.querySelector('#shortintro');
     content1.appendChild(document.createTextNode(article.shortIntro));
@@ -48,12 +50,12 @@ async function renderData() {
         let li = document.createElement('li');
         let a = document.createElement('a');
         a.textContent = rp[i];
-        a.href="#";
+        a.href=`./singlepost.html?title=${rp[i]}`;
         li.appendChild(a)
         relatedArticle.appendChild(li);
     }
 
-
+    // comment
     var comments = document.querySelector('.container');
     let cmts = article.comments;
     for(let i = 0; i < cmts.length; i++){
@@ -84,9 +86,6 @@ async function renderData() {
 
 
     }
-
-
-
 }
 
 

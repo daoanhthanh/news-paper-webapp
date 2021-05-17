@@ -43,7 +43,7 @@ async function po() {
         img_div.class = 'rm';
         a.textContent = 'Read More';
         // a.href = 'singlepost.html';
-        a.href = `/singlepost.html?id=${articleId}`;
+        a.href = `./singlepost.html?id=${articleId}`;
 
 
         img_div.appendChild(a);

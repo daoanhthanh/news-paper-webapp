@@ -14,4 +14,7 @@ public interface ArticleRepo extends MongoRepository<Article, String> {
 //    nativeQuery = true)
     @Query("{category:  '?0'  }")
     List<Article> findArticleByCategory(String category);
+
+    @Query("{title: '?0' }")
+    Article findArticleByTitle(String title);
 }

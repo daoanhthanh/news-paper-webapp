@@ -1,0 +1,39 @@
+version: "3.3"
+services:
+  mongodb:
+    container_name: daoanhthanh_mongodb
+    restart: always
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+    networks:
+      - daoanhthanh
+
+  postgres:
+    container_name: daoanhthanh_postgresSQL
+    restart: always
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=example
+    networks:
+      - daoanhthanh
+
+  mysql:
+    container_name: daoanhthanh_MySQL
+    restart: always
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=example
+    networks:
+      - daoanhthanh
+
+networks:
+  daoanhthanh:
+    driver: bridge

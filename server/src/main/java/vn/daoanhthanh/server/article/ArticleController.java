@@ -8,7 +8,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/article")
+@RequestMapping(value = "/article", method = RequestMethod.GET)
 public class ArticleController {
     private final ArticleRepo repo;
 
@@ -28,6 +28,11 @@ public class ArticleController {
     @GetMapping("/{id}")
     public Article findArticleById(@PathVariable("id") String articleId ){
         return repo.findById(articleId).orElse(null);
+    }
+
+    @GetMapping("/title/{title}")
+    public Article findArticleByTitle(@PathVariable("title") String articleTitle){
+        return repo.findArticleByTitle(articleTitle);
     }
 
     @PostMapping("/addAll")

@@ -9,5 +9,5 @@ Other questions or requirement please contact me via ![Twitter](https://twitter.
 Demo:
 ![Homepage](./demo/homepage.jpg)
 
-![A single Article](./demo/singlearticle.jpg)
+![A single Article](./demo/singlepost.jpg)
 ---

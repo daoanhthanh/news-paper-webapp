@@ -517,6 +517,12 @@ input[type="submit"]:active{
 	color: #9c9183;
   }
 
+  .tags{
+	font-style: italic;
+	color: aqua;
+	margin-bottom: 20px;
+  }
+
   .comm{
 	padding-top: 100px;
   }

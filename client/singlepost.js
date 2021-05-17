@@ -21,6 +21,9 @@ async function renderData() {
     var author = document.querySelector('#author');
     var z = document.createTextNode(article.author); // is a node
     author.appendChild(z);
+
+    var tags = document.querySelector('.tags');
+    tags.appendChild(document.createTextNode(article.tag));
     
     var category = document.querySelector('#category');
     category.appendChild(document.createTextNode(article.category))

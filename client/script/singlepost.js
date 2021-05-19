@@ -15,6 +15,8 @@ async function getNews(articleId) {
 
 
 async function renderData() {
+
+    
     
     await getNews(articleId);
 
@@ -90,11 +92,13 @@ async function renderData() {
 
     }
 
+
+
     var tags = document.querySelector('.tags');
     let b = document.createElement('a');
     b.textContent = article.tag;
     b.href = "#homenav";
-    tags.appendChild(b);
+    tags.appendChild(b);   
 }
 
 

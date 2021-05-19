@@ -196,10 +196,6 @@ async function sci() {
         let article = document.createElement('article');
         article.class = 'covid';
 
-        //thé bảo chưa gọi ở đâu :))
-        // t bịk lỗi ở đau thế?
-        //không gọi trong áync function thì nó bị pengà, hiểu r c <3 OK i//ng mãi
-
 
         let h1 = document.createElement('h1');
         h1.textContent = articles[i].title;
@@ -232,4 +228,3 @@ co();
 bu();
 tech();
 sci();
-

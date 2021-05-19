@@ -295,7 +295,7 @@ header{
 }
 
 /************* B L O G    S T Y L E  &   C O N T A C T   P A G E *****************************/
-#articles, #sidebar{
+.articles, #sidebar{
 	display: inline-block;
 	vertical-align: top;
 	*display: inline;
@@ -308,7 +308,7 @@ header{
 	width: 280px;
 	margin:0 0 0 55px;
 }
-#articles, #contactpost{
+.articles, #contactpost{
 	width: 600px;
 	margin:0 0 40px 0;
 }
@@ -585,4 +585,14 @@ footer{
 	margin-top: 30px;
 	text-align: right;
 	font-family: 'Courier New', Courier, monospace;
+}
+
+
+/*********** COMMENT STYLE ***********/
+input {
+	height: 30px;
+}
+#comment_content input{
+	width: 535px;
+	height: 80px;
 }

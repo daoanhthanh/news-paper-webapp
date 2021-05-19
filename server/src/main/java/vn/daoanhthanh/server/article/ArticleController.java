@@ -10,40 +10,47 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/article", method = RequestMethod.GET)
 public class ArticleController {
-    private final ArticleRepo repo;
+    private final ArticleServiceImpl service;
 
     @Autowired
-    public ArticleController(ArticleRepo repo){
-        this.repo = repo;
+    public ArticleController(ArticleServiceImpl service){
+        this.service = service;
     }
 
     @GetMapping("/all")
     public List<Article> findAll(@RequestParam(required = false) String category){
         if(category != null){
-            return repo.findArticleByCategory(category);
+            return service.findArticleByCategory(category);
         }
-        return repo.findAll();
+        return service.findAll();
     }
 
     @GetMapping("/{id}")
     public Article findArticleById(@PathVariable("id") String articleId ){
-        return repo.findById(articleId).orElse(null);
+        return service.findById(articleId);
     }
 
     @GetMapping("/title/{title}")
     public Article findArticleByTitle(@PathVariable("title") String articleTitle){
-        return repo.findArticleByTitle(articleTitle);
+        return service.findArticleByTitle(articleTitle);
+    }
+
+    @GetMapping("/categories")
+    public List<String> returnAllCategory(){
+        return null;
     }
 
     @PostMapping("/addAll")
     public Collection<Article> addAll(@RequestBody List<Article> articles){
-        return repo.saveAll(articles);
+        return service.saveAll(articles);
     }
 
     @PostMapping("/add")
     public Article add(@RequestBody Article article){
-        return repo.save(article);
+        return service.save(article);
     }
+
+
 
 
 

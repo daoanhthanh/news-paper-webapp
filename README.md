@@ -13,7 +13,7 @@ Home page
 ![](./demo/homepage.jpg)
 
 A single article
-![](./demo/singlepomst.jpg)
+![](./demo/singlepost.jpg)
 
 **How it works**
 

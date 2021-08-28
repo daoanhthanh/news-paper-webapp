@@ -21,11 +21,14 @@ public class Article {
     private String id;
     private String title;
 //    @Size
+
     private String shortIntro;
+
 //    @Lob
 //    @Column
     private String content;
 //    private final LocalDate createdAt = LocalDate.now(ZoneId.systemDefault());
+
     private String author;
     @JsonProperty("relatedArticle")
     private List<String> relatedArticle;

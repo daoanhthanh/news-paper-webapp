@@ -1,4 +1,4 @@
-version: "3.3"
+version: "3.9"
 services:
   mongodb:
     container_name: daoanhthanh_mongodb
@@ -12,19 +12,30 @@ services:
     networks:
       - daoanhthanh
 
-  postgres:
-    container_name: daoanhthanh_postgresSQL
-    restart: always
-    image: postgres
-    ports:
-      - 5432:5432
-    environment:
-      - POSTGRES_PASSWORD=example
-    networks:
-      - daoanhthanh
-
+  # postgres:
+  #   container_name: postgresql
+  #   restart: always
+  #   image: postgres
+  #   ports:
+  #     - 5432:5432
+  #   environment:
+  #     - POSTGRES_PASSWORD=example
+  #   networks:
+  #     - sunoil
+  #
+  # redis:
+  #   container_name: redis
+  #   restart: always
+  #   image: redis
+  #   environment:
+  #     - ALLOW_EMPTY_PASSWORD=yes
+  #   ports:
+  #     - 6379:6379
+  #   networks:
+  #     - sunoil
+  # #
   mysql:
-    container_name: daoanhthanh_MySQL
+    container_name: MySQL
     restart: always
     image: mysql
     ports:
